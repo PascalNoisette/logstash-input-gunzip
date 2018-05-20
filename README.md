@@ -46,10 +46,3 @@ $ curl -uUsername:Password https://rubygems.org/api/v1/api_key.yaml > ~/.gem/cre
 $ chmod 0600 ~/.gem/credentials
 $ bundle exec rake publish_gem
 ```
-
-# How to use it
-
-```
-bin/logstash-plugin install logstash-input-gunzip
-bin/logstash -e 'input { gunzip { path => ["/var/log/syslog.2.gz", "/var/log/syslog.3.gz"] } } output {stdout { codec => rubydebug }}'
-```

@@ -2,7 +2,7 @@
 
 ## Awards
 
-[![Travis Build Status](https://travis-ci.org/logstash-plugins/logstash-input-gunzip.svg)](https://travis-ci.org/logstash-plugins/logstash-input-gunzip)
+[![Travis Build Status](https://travis-ci.org/PascalNoisette/logstash-input-gunzip.svg?branch=master)](https://travis-ci.org/PascalNoisette/logstash-input-gunzip)
 
 [![Gem Version](https://badge.fury.io/rb/logstash-input-gunzip.svg)](https://badge.fury.io/rb/logstash-input-gunzip)
 

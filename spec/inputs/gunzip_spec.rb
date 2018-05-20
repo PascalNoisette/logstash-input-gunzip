@@ -16,6 +16,7 @@ describe LogStash::Inputs::Gunzip do
         gz.write "hello"
         gz.write FILE_DELIMITER
         gz.write "world"
+        gz.write FILE_DELIMITER
         gz.close
       end
       
@@ -31,8 +32,8 @@ describe LogStash::Inputs::Gunzip do
         2.times.collect { queue.pop }
       end
 
-      insist { events[0].get("message") } == "hello"
-      insist { events[1].get("message") } == "world"
+      insist { events[0].get("message") } == "hello\n"
+      insist { events[1].get("message") } == "world\n"
   
     end
 end
